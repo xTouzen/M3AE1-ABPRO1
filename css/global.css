@@ -1,0 +1,8 @@
+.contenido-central {
+    display: flex;
+    padding: 20px 160px;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+}
