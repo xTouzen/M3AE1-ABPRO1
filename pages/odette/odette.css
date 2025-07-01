@@ -54,7 +54,6 @@ p {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    margin: 12px;
 }
 
 .products {
@@ -62,5 +61,7 @@ p {
     align-self: stretch;
     border-radius: 8px;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+        margin: 12px;
+
 }
 
