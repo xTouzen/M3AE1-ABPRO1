@@ -27,6 +27,7 @@ h2 {
 }
 
 h3 {
+    align-self: stretch;
     color: #171212;
     font-feature-settings: 'dlig' on;
     font-family: "Plus Jakarta Sans";
@@ -34,9 +35,11 @@ h3 {
     font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 150% */
+    text-align: start;
 }
 
 p {
+    align-self: stretch;
     color: #876363;
     font-feature-settings: 'dlig' on;
     font-family: "Plus Jakarta Sans";
@@ -44,6 +47,7 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 21px; /* 150% */
+    text-align: start;
 }
 
 .productos {
