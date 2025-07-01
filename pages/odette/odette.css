@@ -1,9 +1,62 @@
+.contenido-central {
+    display: flex;
+    padding: 20px 160px;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
 #minimalista {
     height: 480px;
     min-height: 480px;
     align-self: stretch;
     border-radius: 8px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.32) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.40) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
-    margin: 20px 160px 20px 160px;
 
 }
+
+h2 {
+    align-self: stretch;
+    color: #171212;
+    font-feature-settings: 'dlig' on;
+    font-family: "Plus Jakarta Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 127.273% */
+}
+
+h3 {
+    color: #171212;
+    font-feature-settings: 'dlig' on;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+p {
+    color: #876363;
+    font-feature-settings: 'dlig' on;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 12px;
+}
+
+.products {
+    height: 244px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
