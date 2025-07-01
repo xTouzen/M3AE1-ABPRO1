@@ -64,11 +64,3 @@ p {
     margin-right: 12px;
 
 }
-
-.category {
-    height: 301px;
-    align-self: stretch;
-    border-radius: 8px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-}
-
