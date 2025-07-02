@@ -3,6 +3,7 @@ Del diseño a la implementación de un producto digital - Página TeLoVendo
 
 Maquetado página TeLoVendo tomando como referencia proyecto de Figma.
 Se utiliza estrutura sugerida por los docentes
+
 M3AE1-ABPRO1/
 └── assets/
     └── img
