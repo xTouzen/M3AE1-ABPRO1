@@ -9,19 +9,19 @@ border-bottom: 1px solid #E5E8EB;
 
 
 
-.navbar_izq {
+.navbar__seccion--izquierda {
     display: flex;
 align-items: center;
 gap: 32px;
 }
 
-.navbar_logo {
+.navbar__logo {
     display: flex;
 align-items: center;
 gap: 16px;
 }
 
-.navbar_brand {
+.navbar__brand {
     color: #171212;
 font-feature-settings: 'dlig' on;
 font-family: "Plus Jakarta Sans";
@@ -32,14 +32,14 @@ line-height: 23px; /* 127.778% */
 align-self: stretch;
 }
 
-.contenedor_brand {
+.contenedor__brand-wrapper {
     display: flex;
 height: 23px;
 flex-direction: column;
 align-items: flex-start;
 }
 
-.navbar_links {
+.navbar__links {
     display: flex;
 align-items: center;
 gap: 36px;
@@ -48,7 +48,7 @@ list-style: none;
 padding-left: 0;
 }
 
-.navbar_links li {
+.navbar__links li {
     color: #171212;
 font-feature-settings: 'dlig' on;
 font-family: "Plus Jakarta Sans";
@@ -59,31 +59,26 @@ line-height: 21px; /* 150% */
 list-style: none;
 }
 
-.navbar_links a {
+.navbar__links a {
     text-decoration: none;
 }
 
-.navbar_links a,
-.navbar_links a:visited,
-.navbar_links a:hover,
-.navbar_links a:active {
+.navbar__links a,
+.navbar__links a:visited,
+.navbar__links a:hover,
+.navbar__links a:active {
   color: black;
   text-decoration: none;
 }
 
-.navbar_der {
+.navbar__seccion--derecha {
     display: flex;
 justify-content: flex-end;
 align-items: flex-start;
 gap: 32px;
 flex: 1 0 0;
 }
-.navbar_der img {
-    display: flex;
-align-items: flex-start;
-flex: 1 0 0;
-align-self: stretch;
-}
+
 
 .product-detail {
     display: flex;
@@ -93,7 +88,7 @@ align-items: flex-start;
 flex: 1 0 0;
 }
 
-.breadcrumb {
+.product-detail__breadcrumb {
     display: flex;
 padding: 16px;
 align-items: flex-start;
@@ -104,7 +99,7 @@ flex-wrap: wrap;
 margin: 0;
 }
 
-.breadcrumb p {
+.product-detail__breadcrumb p {
     align-self: stretch;
     color: #876363;
 font-feature-settings: 'dlig' on;
@@ -116,7 +111,7 @@ line-height: 24px; /* 150% */
 margin: 0;
 }
 
-.breadcrumb span {
+.product-detail__breadcrumb span {
     color: #171212;
 font-feature-settings: 'dlig' on;
 font-family: "Plus Jakarta Sans";
@@ -127,7 +122,7 @@ line-height: 24px; /* 150% */
 align-self: stretch;
 }
 
-.product-title {
+.product-detail__title {
     display: flex;
 padding: 20px 16px 12px 16px;
 flex-direction: column;
@@ -143,7 +138,7 @@ font-weight: 700;
 line-height: 35px; /* 125% */
 }
 
-.product-description {
+.product-detail__description {
     display: flex;
 padding: 4px 16px 12px 16px;
 flex-direction: column;
@@ -159,7 +154,7 @@ line-height: 24px; /* 150% */
 margin: 0;
 }
 
-.product-image {
+.product-detail__image {
  display: flex;
 padding: 16px;
 align-items: flex-start;
@@ -169,7 +164,7 @@ background: #FFF;
 
 
 
-.product-image img {
+.product-detail__image img {
     display: flex;
 align-items: flex-start;
 gap: 8px;
@@ -178,15 +173,15 @@ border-radius: 8px;
 background: #FFF;
 }
 
-.boton {
+.product-detail__button {
     display: flex;
 padding: 12px 16px;
 align-items: flex-start;
 align-self: stretch;
 }
 
-.add-to-cart {
-  background-color: #EF4444; /* rojo fuerte (como Tailwind red-500) */
+.product-detail__button-wrapper {
+  background-color: #EF4444;
   color: white;
   border: none;
   padding:  10px 16px;
@@ -198,7 +193,7 @@ align-self: stretch;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Efecto hover para mejor UX */
-.add-to-cart:hover {
-  background-color: #DC2626; /* rojo más oscuro al pasar el mouse */
+
+.product-detail__button-wrapper:hover {
+  background-color: #DC2626; 
 }
