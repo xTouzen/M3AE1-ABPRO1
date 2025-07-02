@@ -1,0 +1,5 @@
+Explicación documentada:
+
+Mi labor fue realizar la página About Us + Footer.
+A pesar de no ser solicitada, se aplica tipología BEM en mi secciónn, a fin de aplicar buenas prácticas.
+Para finalizar, se añade el footer en el resto de html, aunque se debieron realizar unas modificaciones minimas para que éste funcione correctamente.
