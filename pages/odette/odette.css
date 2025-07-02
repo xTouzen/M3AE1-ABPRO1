@@ -50,13 +50,13 @@ p {
     text-align: start;
 }
 
-.productos {
+.productsycategories {
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
 
-.products {
+.product__img {
     height: 244px;
     align-self: stretch;
     border-radius: 8px;
