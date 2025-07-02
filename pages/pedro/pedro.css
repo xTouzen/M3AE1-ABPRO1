@@ -1,0 +1,141 @@
+.contenido-central {
+    display: flex;
+    height: 1186px;
+    padding: 20px 160px;
+    /* justify-content: center; */
+    align-items: flex-start;
+    align-self: stretch;
+    font-family: "Plus Jakarta Sans";
+}
+
+.featured-content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.div-16 {
+    color: #171212;
+    font-feature-settings: 'dlig' on;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 16px;
+    padding: 0 16px;
+}
+
+.div-16 a {
+    color: #876363;
+    font-feature-settings: 'dlig' on;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.div-16 .separator {
+  margin: 0 8px;
+  color: #ccc;
+}
+
+.div-16-2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #111;
+  padding: 0 16px;
+  margin-bottom: 32px;
+}
+
+.categories {
+  display: flex;
+  gap: 12px; 
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  background-color: #F5F0F0;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.category-btn:hover {
+  background-color: #ddd;
+}
+
+.product-grid {
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+}
+
+.product-card {
+  border-radius: 12px;
+  padding: 8px;
+  background-color: #fff;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+    color: #171212;
+    font-feature-settings: 'dlig' on;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    margin: 0;
+}
+
+.product-card p {
+    color: #876363;
+    font-weight: 500;
+    margin: 0;
+}
+
+.pagination-container {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  gap: 12px;
+}
+
+.page-link {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.page-link:hover {
+  background-color: #f0f0f0;
+}
+
+.page-link.active {
+  background-color: #F5F0F0;
+  border-color: #333;
+  border-radius: 50%;
+  width: 10px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

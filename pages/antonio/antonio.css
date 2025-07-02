@@ -1,0 +1,204 @@
+.navbar {
+    display: flex;
+padding: 12px 40px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+border-bottom: 1px solid #E5E8EB;
+}
+
+
+
+.navbar_izq {
+    display: flex;
+align-items: center;
+gap: 32px;
+}
+
+.navbar_logo {
+    display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.navbar_brand {
+    color: #171212;
+font-feature-settings: 'dlig' on;
+font-family: "Plus Jakarta Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 23px; /* 127.778% */
+align-self: stretch;
+}
+
+.contenedor_brand {
+    display: flex;
+height: 23px;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.navbar_links {
+    display: flex;
+align-items: center;
+gap: 36px;
+align-items: flex-start;
+list-style: none;
+padding-left: 0;
+}
+
+.navbar_links li {
+    color: #171212;
+font-feature-settings: 'dlig' on;
+font-family: "Plus Jakarta Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px; /* 150% */
+list-style: none;
+}
+
+.navbar_links a {
+    text-decoration: none;
+}
+
+.navbar_links a,
+.navbar_links a:visited,
+.navbar_links a:hover,
+.navbar_links a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar_der {
+    display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 32px;
+flex: 1 0 0;
+}
+.navbar_der img {
+    display: flex;
+align-items: flex-start;
+flex: 1 0 0;
+align-self: stretch;
+}
+
+.product-detail {
+    display: flex;
+max-width: 960px;
+flex-direction: column;
+align-items: flex-start;
+flex: 1 0 0;
+}
+
+.breadcrumb {
+    display: flex;
+padding: 16px;
+align-items: flex-start;
+align-content: flex-start;
+gap: 8px;
+align-self: stretch;
+flex-wrap: wrap;
+margin: 0;
+}
+
+.breadcrumb p {
+    align-self: stretch;
+    color: #876363;
+font-feature-settings: 'dlig' on;
+font-family: "Plus Jakarta Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+margin: 0;
+}
+
+.breadcrumb span {
+    color: #171212;
+font-feature-settings: 'dlig' on;
+font-family: "Plus Jakarta Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+align-self: stretch;
+}
+
+.product-title {
+    display: flex;
+padding: 20px 16px 12px 16px;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+margin: 0;
+color: #171212;
+font-feature-settings: 'dlig' on;
+font-family: "Plus Jakarta Sans";
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 35px; /* 125% */
+}
+
+.product-description {
+    display: flex;
+padding: 4px 16px 12px 16px;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+color: #171212;
+font-feature-settings: 'dlig' on;
+font-family: "Plus Jakarta Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+margin: 0;
+}
+
+.product-image {
+ display: flex;
+padding: 16px;
+align-items: flex-start;
+align-self: stretch;
+background: #FFF;
+}
+
+
+
+.product-image img {
+    display: flex;
+align-items: flex-start;
+gap: 8px;
+flex: 1 0 0;
+border-radius: 8px;
+background: #FFF;
+}
+
+.boton {
+    display: flex;
+padding: 12px 16px;
+align-items: flex-start;
+align-self: stretch;
+}
+
+.add-to-cart {
+  background-color: #EF4444; /* rojo fuerte (como Tailwind red-500) */
+  color: white;
+  border: none;
+  padding:  10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Efecto hover para mejor UX */
+.add-to-cart:hover {
+  background-color: #DC2626; /* rojo más oscuro al pasar el mouse */
+}
