@@ -23,23 +23,23 @@
 </head>
 <body>
 <nav class="navbar">
-    <div class="navbar_izq">
-        <div class="navbar_logo">
-            <img src="/assets/img/logo_nav.svg" alt="Logo de Te lo Vendo">
-            <div class="contenedor_brand">
-            <span class="navbar_brand">Te lo Vendo</span>
+    <div class="navbar__seccion navbar__seccion--izquierda">
+        <div class="navbar__logo">
+            <img src="/assets/img/logo_nav.svg" alt="Logo de Te lo Vendo" class="navbar__logo-img">
+            <div class="contenedor__brand-wrapper">
+            <span class="navbar__brand">Te lo Vendo</span>
             </div>
         </div>
 
-        <ul class="navbar_links">
-            <li><a href="../odette/home.html">Home</a></li>
-            <li><a href="../pedro/catalog.html">Shop</a></li>
-            <li><a href="../jose/aboutus.html">About</a></li>
-            <li><a href="../antonio/detail.html">Contact</a></li>
+        <ul class="navbar__links">
+            <li class="navbar__item"><a href="../odette/home.html" class="navbar__link">Home</a></li>
+            <li class="navbar__item"><a href="../pedro/catalog.html" class="navbar__link">Shop</a></li>
+            <li class="navbar__item"><a href="../jose/aboutus.html" class="navbar__link">About</a></li>
+            <li class="navbar__item"><a href="../antonio/detail.html" class="navbar__link">Contact</a></li>
         </ul>
     </div>
 
-    <div class="navbar_der">
+    <div class="navbar__seccion navbar__seccion--derecha">
         <div class="navbar__search">
             <img src="/assets/img/search.svg" alt="Buscar">
         </div>
@@ -48,36 +48,36 @@
             <img src="/assets/img/carrito.svg" alt="Carrito de compras" class="cart__icon">
         </div>
 
-        <div class="navbar_avatar">
+        <div class="navbar__avatar">
             <img src="/assets/img/usuario.svg" alt="Usuario">
         </div>
     </div>
 </nav>
     <main class="contenido-central">
         <section class="product-detail">
-            <!-- Breadcrumb -->
-            <nav class="breadcrumb">
+            
+            <nav class="product-detail__breadcrumb">
                 <p>Shop / <span>Product Details</span></p>
             </nav>
     
-            <!-- Título del producto -->
-            <h1 class="product-title">Wireless Noise–Canceling Headphones</h1>
+            
+            <h1 class="product-detail__title">Wireless Noise–Canceling Headphones</h1>
     
-            <!-- Descripción del producto -->
-            <p class="product-description">
+            
+            <p class="product-detail__description">
                 Experience immersive sound with our wireless noise–canceling headphones.
                 Perfect for travel, work, or relaxation, these headphones deliver crystal-clear audio and block out
                 distractions.
             </p>
     
-            <!-- Imagen del producto -->
-            <div class="product-image">
+            
+            <div class="product-detail__image">
                 <img src="/pages/antonio/img/headphones.png" alt="Wireless Noise–Canceling Headphones">   
             </div>
     
-            <!-- Botón para añadir al carrito -->
-             <div class="boton">
-            <button class="add-to-cart">Add to Cart</button>
+            
+             <div class="product-detail__button">
+            <button class="product-detail__button-wrapper">Add to Cart</button>
             </div>
         </section>
     </main>
