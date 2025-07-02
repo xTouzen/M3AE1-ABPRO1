@@ -1,18 +1,39 @@
-.contenido-central {
+html, body {
+    height: 100%;
+    min-height: 100vh; 
     display: flex;
-    padding: 20px 160px;
-    justify-content: center;
-    align-items: flex-start;
-    align-self: stretch;
+    flex-direction: column;
 }
+
+.main-container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-central {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 #minimalista {
     height: 480px;
     min-height: 480px;
     align-self: stretch;
     border-radius: 8px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.32) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.40) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
-
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.32) 100%),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.40) 100%),
+                url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
 h2 {
@@ -23,7 +44,7 @@ h2 {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px; /* 127.273% */
+    line-height: 28px;
 }
 
 h3 {
@@ -34,7 +55,7 @@ h3 {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
     text-align: start;
 }
 
@@ -46,7 +67,7 @@ p {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 21px; /* 150% */
+    line-height: 21px;
     text-align: start;
 }
 
@@ -54,6 +75,8 @@ p {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .products {
@@ -62,5 +85,4 @@ p {
     border-radius: 8px;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     margin-right: 12px;
-
 }
