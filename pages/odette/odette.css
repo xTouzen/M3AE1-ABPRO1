@@ -5,14 +5,14 @@ html, body {
     flex-direction: column;
 }
 
-.main-container {
+.main--container {
     flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.contenido-central {
+.main--content {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ html, body {
 
 
 
-#minimalista {
+#minimalist {
     height: 480px;
     min-height: 480px;
     align-self: stretch;
