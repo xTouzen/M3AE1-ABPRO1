@@ -13,18 +13,22 @@ M3AE1-ABPRO1/
     └── global.js
 └── pages/
     └── antonio/
+        └── img
         └── antonio.html
         └── antonio.css
         └── antonio.js
     └── jose/
+        └── img
         └── jose.html
         └── jose.css
         └── jose.js
     └── odette/
+        └── img
         └── odette.html
         └── odette.css
         └── odette.js
     └── pedro/
+        └── img
         └── pedro.html
         └── pedro.css
         └── pedro.js
