@@ -26,7 +26,7 @@ html, body {
 
 
 
-#minimalist {
+#minimalist__img {
     height: 480px;
     min-height: 480px;
     align-self: stretch;
@@ -71,7 +71,7 @@ p {
     text-align: start;
 }
 
-.productsycategories {
+.section--productsycategories {
     display: flex;
     justify-content: space-around;
     text-align: center;
