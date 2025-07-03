@@ -1,8 +1,8 @@
-.contenido-central {
+.main-content {
     display: flex;
     height: 1186px;
     padding: 20px 160px;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: flex-start;
     align-self: stretch;
     font-family: "Plus Jakarta Sans";
