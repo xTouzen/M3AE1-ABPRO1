@@ -1,4 +1,4 @@
-.contenido-central {
+.main-content {
     display: flex;
     height: 1186px;
     padding: 20px 160px;
@@ -10,7 +10,7 @@
 
 .featured-content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .featured__breadcrumb {
