@@ -1,0 +1,16 @@
+@use '../abstracts/variables';
+
+.main-content {
+  display: flex;
+  height: 1186px;
+  padding: 20px variables.$spacing-xl;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  font-family: variables.$font-main;
+}
+
+.featured-content {
+  width: 100%;
+  max-width: 1000px;
+}

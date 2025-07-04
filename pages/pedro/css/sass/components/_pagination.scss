@@ -1,0 +1,35 @@
+@use '../abstracts/variables';
+
+.pagination-container {
+  padding: variables.$spacing-md;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  gap: variables.$spacing-sm;
+
+  &__link {
+    text-decoration: none;
+    color: #333;
+    padding: variables.$spacing-xs variables.$spacing-sm;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: variables.$color-pagination;
+    }
+
+    &--active {
+      background-color: variables.$color-active;
+      border-color: #333;
+      border-radius: 50%;
+      width: 10px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

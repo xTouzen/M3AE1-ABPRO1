@@ -1,0 +1,59 @@
+@use '../abstracts/variables';
+
+.featured {
+  &__breadcrumb {
+    color: variables.$color-primary;
+    font-feature-settings: 'dlig' on;
+    font-family: variables.$font-main;
+    font-size: variables.$font-size-base;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: variables.$spacing-md;
+    padding: 0 variables.$spacing-md;
+
+    a {
+      color: variables.$color-secondary;
+      font-feature-settings: 'dlig' on;
+      font-family: variables.$font-main;
+      font-size: variables.$font-size-base;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    .featured__separator {
+      margin: 0 variables.$spacing-sm;
+      color: variables.$color-border;
+    }
+  }
+
+  &__title {
+    font-size: variables.$font-size-title;
+    font-weight: bold;
+    color: #111;
+    padding: 0 variables.$spacing-md;
+    margin-bottom: variables.$spacing-lg;
+  }
+
+  &__categories {
+    display: flex;
+    gap: variables.$spacing-sm;
+    padding: variables.$spacing-md;
+    flex-wrap: wrap;
+  }
+
+  &__category-btn {
+    background-color: variables.$color-bg;
+    border: none;
+    padding: variables.$spacing-xs variables.$spacing-md;
+    border-radius: 8px;
+    font-size: variables.$font-size-base;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: variables.$color-hover;
+    }
+  }
+}
