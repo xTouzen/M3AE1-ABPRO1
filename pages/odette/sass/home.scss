@@ -1,1 +1,8 @@
-@use "../sass/abstracts/abstracts.scss"
+@use "../sass/abstracts/abstracts.scss";
+@use "../sass/base/base.scss";
+@use "../sass/components/components.scss";
+@use "../sass/layout/layout.scss";
+@use "../sass/pages/pages.scss";
+@use "../sass/themes/themes.scss";
+@use "../sass/vendors/vendors.scss";
+
