@@ -7,71 +7,90 @@ $color-light-text: #876363;
 $font-jakarta-sans: "Plus Jakarta Sans", sans-serif;
 
 // Propiedades de Flexbox comunes
-$flex-column: column;
-$flex-center: center;
-$flex-stretch: stretch;
+$display-flex: flex;
+$flex-direction-column: column;
+$justify-content-center: center;
+$align-items-center: center;
+$align-items-start: flex-start;
+$align-self-stretch: stretch;
+$flex-basis-full: 1 0 0; // shorthand for flex-grow: 1, flex-shrink: 0, flex-basis: 0
+
+// Espaciado
+$spacing-sm: 16px;
+$spacing-md: 20px;
+$spacing-lg: 24px;
+$spacing-xl: 28px;
+$gap-md: 16px; // For flex gap
 
 // Bordes y sombras
 $border-radius-medium: 8px;
+$max-content-width: 1000px;
 
 // --- Estilos de Bloques y Elementos ---
 
 .main--container {
     flex: 1;
-    display: flex;
-    flex-direction: $flex-column;
-    justify-content: $flex-center;
+    display: $display-flex;
+    flex-direction: $flex-direction-column;
+    justify-content: $justify-content-center;
 }
 
 .main--content {
     flex: 1;
-    display: flex;
-    flex-direction: $flex-column;
-    max-width: 1000px;
+    display: $display-flex;
+    flex-direction: $flex-direction-column;
+    max-width: $max-content-width;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
-    justify-content: $flex-center;
-    align-items: $flex-center;
+    padding: $spacing-md;
+    justify-content: $justify-content-center;
+    align-items: $align-items-center;
 }
 
 #minimalist__img {
     height: 480px;
     min-height: 480px;
-    align-self: $flex-stretch;
+    align-self: $align-self-stretch;
     border-radius: $border-radius-medium;
     background:
         linear-gradient(0deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.32) 100%),
         linear-gradient(90deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.40) 100%),
         url(<path-to-image>) lightgray 50% / cover no-repeat;
+    
+    // Propiedades de flex que estaban sueltas en el CSS original
+    display: $display-flex;
+    padding: $spacing-sm; // 16px
+    flex-direction: $flex-direction-column;
+    align-items: $align-items-start;
+    flex: $flex-basis-full; // 1 0 0
+    align-self: $align-self-stretch; // Duplicado, pero se mantiene del original CSS
 }
 
-// Anidamiento para títulos y párrafos, usando variables para consistencia
 h2 {
-    align-self: $flex-stretch;
+    align-self: $align-self-stretch;
     color: $color-dark-text;
     font-feature-settings: 'dlig' on;
     font-family: $font-jakarta-sans;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px;
+    line-height: $spacing-xl; // 28px
 }
 
 h3 {
-    align-self: $flex-stretch;
+    align-self: $align-self-stretch;
     color: $color-dark-text;
     font-feature-settings: 'dlig' on;
     font-family: $font-jakarta-sans;
-    font-size: 16px;
+    font-size: $spacing-sm; // 16px
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: $spacing-lg; // 24px
     text-align: start;
 }
 
 p {
-    align-self: $flex-stretch;
+    align-self: $align-self-stretch;
     color: $color-light-text;
     font-feature-settings: 'dlig' on;
     font-family: $font-jakarta-sans;
@@ -83,17 +102,17 @@ p {
 }
 
 .section--productsycategories {
-    display: flex;
+    display: $display-flex;
     justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: $gap-md; // 16px
 }
 
-.product__img { // Aquí asumo que 'product__img' es un elemento dentro de un bloque 'product'
+.product__img {
     height: 244px;
-    align-self: $flex-stretch;
+    align-self: $align-self-stretch;
     border-radius: $border-radius-medium;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-    margin-right: 12px; // Considera usar `gap` en el contenedor padre si es un layout de varios productos
+    margin-right: 12px;
 }
