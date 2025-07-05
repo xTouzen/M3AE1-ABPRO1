@@ -1,0 +1,38 @@
+@use '../abstracts/variables';
+
+.product-grid {
+  display: flex;
+  padding: variables.$spacing-md;
+  align-items: flex-start;
+  gap: variables.$spacing-sm;
+  flex: 1 0 0;
+}
+
+.product-card {
+  border-radius: 12px;
+  padding: variables.$spacing-xs;
+  background-color: variables.$color-white;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  h3 {
+    color: variables.$color-primary;
+    font-feature-settings: 'dlig' on;
+    font-family: variables.$font-main;
+    font-size: variables.$font-size-base;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  p {
+    color: variables.$color-secondary;
+    font-weight: 500;
+    margin: 0;
+  }
+}
