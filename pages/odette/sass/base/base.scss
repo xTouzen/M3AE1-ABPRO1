@@ -63,7 +63,6 @@ $max-content-width: 1000px;
     flex-direction: $flex-direction-column;
     align-items: $align-items-start;
     flex: $flex-basis-full; // 1 0 0
-    align-self: $align-self-stretch; // Duplicado, pero se mantiene del original CSS
 }
 
 h2 {
