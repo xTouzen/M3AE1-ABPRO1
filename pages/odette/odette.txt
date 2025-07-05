@@ -8,4 +8,4 @@ proyecto y decisiones tomadas.
 Me tocó ver la página home, dentro de la sección main cree secciones, la primera sección es una imagen por lo cual le di estilo con id, la segunda sección y la tercera son similares les di el mismo nombre de clase para guardar la configuración general respecto al orden de los productos horizontal, que ocupen todo el espacio, en la tercera sección las categorías tienen otra clase ya que las imágenes tienen una configuración distinta. Coloque alt a las imágenes para mayor accesibilidad. Se organiza el contenido en secciones y etiquetas de acuerdo a las buenas prácticas.
 
 Odette Gallo Martínez
-https://github.com/xTouzen/M3AE1-ABPRO1/tree/master
+https://github.com/xTouzen/M3AE1-ABPRO1/
