@@ -1,6 +1,6 @@
 // _layout.scss (usa @use si estás modularizando tu proyecto)
 
-@use '../abstracts/abstracts' as *;
+@use '../abstracts/variables' as *;
 
 html, body {
   height: 100%;
