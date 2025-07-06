@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+
+.content {
+  display: flex;
+  min-height: 729px;
+  padding: $spacing-md $spacing-xxl;
+  justify-content: center;
+  align-items: flex-start;
+
+  &__wrapper {
+    display: flex;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+}

@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as *;
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-primary;
+  font-feature-settings: 'dlig' on;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  background-color: $color-bg;
+  color: $color-text;
+}
+
+.main-container {
+  flex: 1;
+}

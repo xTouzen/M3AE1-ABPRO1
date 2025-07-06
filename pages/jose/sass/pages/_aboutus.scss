@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+
+.aboutus-page {
+  // Ejemplo: padding general
+  padding: $spacing-lg $spacing-md;
+
+  // Título principal si lo hay
+  &__title {
+    font-size: $font-size-xl;
+    color: $color-text;
+    margin-bottom: $spacing-md;
+  }
+
+  // Contenedor principal
+  &__container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
