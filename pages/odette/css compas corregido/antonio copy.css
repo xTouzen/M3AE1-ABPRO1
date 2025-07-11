@@ -62,12 +62,12 @@
   flex: 1 0 0;
 }
 
-.contenedor__brand-wrapper {
+/* .contenedor__brand-wrapper {
   display: flex;
   height: 23px;
   flex-direction: column;
   align-items: flex-start;
-}
+} */
 
 .product-detail {
   display: flex;

@@ -4,6 +4,72 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+.navbar {
+  display: flex;
+  padding: 12px 40px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid #E5E8EB;
+}
+.navbar__seccion--izquierda {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.navbar__brand {
+  color: #171212;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  /* 127.778% */
+  align-self: stretch;
+}
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  align-items: flex-start;
+  list-style: none;
+  padding-left: 0;
+}
+.navbar__links li {
+  color: #171212;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  list-style: none;
+}
+.navbar__seccion--derecha {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+}
+
+.navbar__links a {
+  text-decoration: none;
+}
+
+.navbar__links a,
+.navbar__links a:visited,
+.navbar__links a:hover,
+.navbar__links a:active {
+  color: black;
+  text-decoration: none;
+}
 
 .main {
 
@@ -125,4 +191,64 @@ p {
     align-self: stretch;
     border-radius: 8px;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+
+.footer {
+  display: flex;
+justify-content: center;
+align-items: flex-start;
+align-self: stretch;
+margin-left: 160px;
+margin-right: 160px;
+}
+
+.footer__container {
+display: flex;
+padding: 40px 20px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+flex: 1 0 0;
+align-self: stretch;
+}
+
+.footer__links {
+  display: flex;
+justify-content: space-between;
+align-items: center;
+align-content: center;
+row-gap: 24px;
+align-self: stretch;
+flex-wrap: wrap;
+}
+
+.footer__link {
+  display: flex;
+  width: 160px;
+  min-width: 160px;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__link-title {
+  width: 100%;
+  color: #876363;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400 !important;
+  line-height: 24px;
+}
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.footer__copyright-text {
+  width: 100%;
+  color: #876363;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400 !important;
+  line-height: 24px;
 }
