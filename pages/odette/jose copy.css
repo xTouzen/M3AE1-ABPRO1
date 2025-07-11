@@ -24,6 +24,8 @@ body {
 justify-content: center;
 align-items: flex-start;
 align-self: stretch;
+margin-left: 160px;
+margin-right: 160px;
 }
 
 .footer__container {
@@ -35,21 +37,17 @@ gap: 24px;
 flex: 1 0 0;
 align-self: stretch;
 }
-.footer__content {
-  display: flex;
-  padding: 40px 16px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  width: 100%;
-}
+
 .footer__links {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
+justify-content: space-between;
+align-items: center;
+align-content: center;
+row-gap: 24px;
+align-self: stretch;
+flex-wrap: wrap;
 }
+
 .footer__link {
   display: flex;
   width: 160px;
