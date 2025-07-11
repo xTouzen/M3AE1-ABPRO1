@@ -336,6 +336,67 @@ p {
     text-align: start;
 }
 
+/* New responsive card styles */
+.section--productsycategories {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards if there's extra space */
+    padding: 16px; /* Padding around the entire section of cards */
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures image corners are rounded with the card */
+    display: flex;
+    flex-direction: column;
+    text-decoration: none; /* If you were to make the card a link */
+    color: inherit; /* Inherit text color if the card becomes a link */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+    flex-basis: calc(33.333% - 20px); /* Default: 3 cards per row with gap */
+    max-width: calc(33.333% - 20px); /* Ensures it doesn't exceed its calculated width */
+    min-width: 250px; /* Minimum width for cards before wrapping */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+}
+
+.product-card__img {
+    width: 100%;
+    height: 200px; /* Fixed height for product images */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border-bottom: 1px solid #e0e0e0; /* Separator between image and content */
+}
+
+.product-card__content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allows content to take up remaining space */
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* For screens smaller than 768px (e.g., tablets in portrait mode, large phones) */
+@media (max-width: 768px) {
+    .product-card {
+        flex-basis: calc(50% - 20px); /* 2 cards per row */
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* For screens smaller than 480px (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .product-card {
+        flex-basis: 100%; /* 1 card per row, full width */
+        max-width: 100%;
+    }
+}
+
 .section--productsycategories {
     display: flex;
     padding: 16px;
