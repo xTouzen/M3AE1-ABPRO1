@@ -322,6 +322,7 @@ h3 {
     font-weight: 500;
     line-height: 24px;
     text-align: start;
+    padding-left: 5%;
 }
 
 p {
@@ -367,7 +368,7 @@ p {
 
 .product-card__img {
     width: 100%;
-    height: 200px; /* Fixed height for product images */
+    height: 100%; /* Fixed height for product images */
     object-fit: cover; /* Ensures image covers the area without distortion */
     border-bottom: 1px solid #e0e0e0; /* Separator between image and content */
 }
@@ -384,8 +385,8 @@ p {
 /* For screens smaller than 768px (e.g., tablets in portrait mode, large phones) */
 @media (max-width: 768px) {
     .product-card {
-        flex-basis: calc(50% - 20px); /* 2 cards per row */
-        max-width: calc(50% - 20px);
+        flex-basis: calc(50% - 30px); /* 2 cards per row */
+        max-width: calc(50% - 30px);
     }
 }
 
@@ -445,6 +446,55 @@ p {
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
+.category-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures image corners are rounded with the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally within the card */
+    text-align: center; /* Center text within the card */
+    padding-bottom: 15px; /* Padding at the bottom of the card content */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+
+    /* Responsive sizing for 3 cards per row by default */
+    flex-basis: calc(33.333% - 30px);
+    max-width: calc(33.333% - 30px);
+    min-width: 257px; /* Minimum width for cards before wrapping */
+}
+
+.category-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+}
+
+.category-card__img {
+    width: 100%; /* Image takes full width of its card */
+    height: 180px; /* Fixed height for category images, adjust as needed */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border-top-left-radius: 8px; /* Match card border-radius */
+    border-top-right-radius: 8px; /* Match card border-radius */
+    margin-bottom: 0; /* Remove default margin below image */
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* For screens smaller than 768px (e.g., tablets in portrait mode, large phones) */
+@media (max-width: 768px) {
+    .category-card {
+        flex-basis: calc(50% - 20px); /* 2 cards per row */
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* For screens smaller than 480px (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .category-card {
+        flex-basis: 100%; /* 1 card per row, full width */
+        max-width: 100%;
+    }
+}
 
 .footer {
   display: flex;
