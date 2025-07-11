@@ -322,6 +322,9 @@ h3 {
     font-weight: 500;
     line-height: 24px;
     text-align: start;
+}
+
+.category-title {
     padding-left: 5%;
 }
 
@@ -374,7 +377,7 @@ p {
 }
 
 .product-card__content {
-    padding: 16px;
+    padding: 6px;
     display: flex;
     flex-direction: column;
     flex-grow: 1; /* Allows content to take up remaining space */
