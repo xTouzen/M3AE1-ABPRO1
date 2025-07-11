@@ -378,6 +378,7 @@ p {
 
 .product-card__content {
     padding: 6px;
+    margin-left: 5px;
     display: flex;
     flex-direction: column;
     flex-grow: 1; /* Allows content to take up remaining space */
@@ -410,19 +411,22 @@ p {
 }
 
 .section--productsycategories > div {
-    /* flex-basis: cal(33.33% - 12px); o un ancho fijo para 3 columnas*/
+    /* flex-basis: cal(33.33% - 12px); 
+    o un ancho fijo para 3 columnas*/
     /* Un ancho flexible que permite 3 elementos por fila aproximadamente,
        ajustado por el 'gap' del padre */
     flex: 1 1 calc(33.33% - 8px);
      /* 100% / 3 - gap (12px / 3 = 4px, 12px - 4px = 8px)*/
                                  /* ajusta el 8px si el gap es diferente */
-    /* max-width: calc(33.33% - 8px); */
+    max-width: calc(33.33% - 8px);
      /* Para evitar que crezcan demasiado en pantallas grandes */
     box-sizing: border-box; /* Incluir padding/border en el ancho total */
     display: flex; /* Hacemos que cada div también sea un contenedor flex */
     flex-direction: column; /* Para apilar imagen, título y párrafo */
-    align-items: center; /* Centrar el contenido dentro de cada div (imagen, texto) */
-    text-align: center; /* Centrar el texto */
+    /* align-items: center;  */
+    /* Centrar el contenido dentro de cada div (imagen, texto) */
+    /* text-align: center;  */
+    /* Centrar el texto */
 }
 
 
@@ -458,7 +462,7 @@ p {
 
 .category-card__img {
     width: 100%; /* Image takes full width of its card */
-    height: 180px; /* Fixed height for category images, adjust as needed */
+    height: 301px; /* Fixed height for category images, adjust as needed */
     object-fit: cover; /* Ensures image covers the area without distortion */
     border-top-left-radius: 8px; /* Match card border-radius */
     border-top-right-radius: 8px; /* Match card border-radius */
