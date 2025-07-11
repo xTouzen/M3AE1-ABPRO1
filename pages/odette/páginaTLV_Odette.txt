@@ -1,3 +1,8 @@
+Actividad 
+El modelo de cajas y el Layout 
+
+Corregí los errores que encontre en el nav y el footer y los deje responsivos al igual que el contenido de la página home.html con css, le puse un poco de js para la responsividad del navbar.
+
 El preprocesador SASS 
 
 Utilicé el patrón 7-1, cree 7 subcarpetas que agrupan los parciales según su propósito en sass/abstract/variables las variables y en sass/pages/homePage donde están los estilos específicos de la página home.html excluyendo nav y footer
