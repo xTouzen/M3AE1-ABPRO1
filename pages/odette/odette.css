@@ -346,7 +346,7 @@ p {
     flex-wrap: wrap; /* Allows cards to wrap to the next line */
     gap: 20px; /* Space between cards */
     justify-content: center; /* Center the cards if there's extra space */
-    padding: 16px; /* Padding around the entire section of cards */
+    padding: 5px; /* Padding around the entire section of cards */
 }
 
 .product-card {
@@ -406,7 +406,7 @@ p {
     padding: 16px;
     align-items: flex-start;
     gap: 12px;
-    flex: 1 0 0;
+    flex: 0 0 0;
 }
 
 .section--productsycategories > div {
@@ -423,24 +423,7 @@ p {
     text-align: center; /* Centrar el texto */
 }
 
-.product__img,
-.category__img {
-    width: 100%; /* ¡CLAVE! La imagen ocupa el 100% del ancho de su padre (el div) */
-    height: auto; /* ¡CLAVE! Mantiene la proporción de la imagen al ajustar el ancho */
-    object-fit: cover; /* Recorta la imagen para que cubra el área sin distorsión */
-    border-radius: 8px;
-    /* Los estilos de background-image no se aplicarán a la etiqueta <img> si ya tiene src */
-    /* Si quieres mantener el background para el placeholder o un fallback,
-       considera envolver la imagen en un div con esos estilos. */
-}
 
-.product__img {
-    height: 244px;
-    align-self: stretch;
-    border-radius: 8px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-    /* margin-right: 12px; */
-}
 
 .category__img {
     height: 301px;
