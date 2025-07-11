@@ -5,118 +5,261 @@ html, body {
     flex-direction: column;
 }
 
+/* --- Globales para enlaces de la navbar --- */
+.navbar__links a,
+.navbar__links a:visited,
+.navbar__links a:hover,
+.navbar__links a:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* --- Estilos del Header --- */
 .header {
     padding: 10px;
     width: 100%;
     background-color: #F8F9FA;
 }
-.navbar {
-  display: flex;
-  padding: 12px 40px;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-  border-bottom: 1px solid #E5E8EB;
-}
-.navbar__seccion--izquierda {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-.navbar__logo {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.navbar__brand {
-  color: #171212;
-  font-feature-settings: "dlig" on;
-  font-family: "Plus Jakarta Sans";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 23px;
-  /* 127.778% */
-  align-self: stretch;
-}
-.navbar__links {
-  display: flex;
-  align-items: center;
-  gap: 36px;
-  align-items: flex-start;
-  list-style: none;
-  padding-left: 0;
-}
-.navbar__links li {
-  color: #171212;
-  font-feature-settings: "dlig" on;
-  font-family: "Plus Jakarta Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 21px;
-  list-style: none;
-}
-/* .navbar__seccion--derecha {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 32px;
-  flex: 1 0 0;
-} */
 
-/* Styles for the right section of the navbar */
+/* --- Estilos de la Navbar Principal --- */
+.navbar {
+    display: flex;
+    padding: 12px 40px; /* Padding para escritorio */
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: 1px solid #E5E8EB;
+}
+
+/* Ocultar el botón de hamburguesa por defecto en escritorio */
+.navbar__toggle {
+    display: none;
+}
+
+/* --- Sección Izquierda de la Navbar --- */
+.navbar__seccion--izquierda {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar__brand {
+    color: #171212;
+    font-feature-settings: "dlig" on;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    align-self: stretch;
+}
+
+/* --- Enlaces de Navegación (ul) --- */
+.navbar__links {
+    display: flex;
+    align-items: center; /* Generalmente 'center' para enlaces en fila */
+    gap: 36px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar__links li {
+    color: #171212;
+    font-feature-settings: "dlig" on;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    list-style: none; /* Asegurar que no haya puntos de lista */
+}
+
+/* --- Sección Derecha de la Navbar (Botones) --- */
 .navbar__seccion--derecha {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start; /* This aligns the buttons to the start of their flex container */
-    gap: 32px; /* Space between buttons */
+    align-items: center; /* Cambiado de flex-start a center para alinear verticalmente los botones con iconos */
+    gap: 32px;
     flex: 1 0 0;
 }
 
 /* Base styles for all navbar buttons */
 .navbar__button {
-    background: none;   /* Remove the default browser background */
-    border: none;       /* Remove the default browser border */
-    padding: 5px;         /* Remove the default browser padding */
-    cursor: pointer;    /* Change cursor to a pointer to indicate it's clickable */
-    display: flex;      /* Use flexbox to center the image inside the button */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center;     /* Center the image vertically */
-
-    /* Styles for the image inside the button */
-    img { /* Note: If you're using SCSS, this 'img' could be nested inside .navbar__button */
-        display: block;   /* Helps remove extra space below the image */
-        max-width: 100%;  /* Image won't overflow the button */
-        height: auto;     /* Maintains the image's aspect ratio */
-    }
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Interactive States (very important) */
+.navbar__button img { /* Estilos para la imagen dentro del botón */
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Interactive States for buttons */
 .navbar__button:hover {
-    opacity: 0.7; /* Makes the button slightly more transparent on hover */
-    /* Or you could use: background-color: rgba(0, 0, 0, 0.05); for a subtle background on hover */
+    opacity: 0.7;
 }
 
 .navbar__button:active {
-    opacity: 0.5; /* Makes the button even more transparent when clicked */
+    opacity: 0.5;
 }
 
 .navbar__button:focus {
-    /* Indicates the button is selected (keyboard navigation) */
-    outline: 2px solid blue; /* A blue outline for focus, you can choose your brand color */
-    outline-offset: 2px;     /* A small space between the button and the focus outline */
+    outline: 2px solid blue;
+    outline-offset: 2px;
+}
+
+/* --- Estilos del Botón de Hamburguesa --- */
+.navbar__toggle {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: relative; /* Para posicionar el icono dentro */
+    z-index: 100; /* Asegura que esté por encima de otros elementos si el menú se superpone */
+}
+
+.navbar__toggle-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #171212;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar__toggle-icon::before,
+.navbar__toggle-icon::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #171212;
+    position: absolute;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+
+.navbar__toggle-icon::before {
+    top: -8px;
+}
+
+.navbar__toggle-icon::after {
+    top: 8px;
+}
+
+/* Estado abierto del botón de hamburguesa (controlado por JS) */
+.navbar__toggle.active .navbar__toggle-icon {
+    background-color: transparent; /* La barra central se oculta */
+}
+
+.navbar__toggle.active .navbar__toggle-icon::before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar__toggle.active .navbar__toggle-icon::after {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* --- MEDIA QUERIES para responsividad --- */
+
+/* Para pantallas medianas y pequeñas (ej. tabletas y móviles) */
+@media (max-width: 768px) { /* Por debajo de 768px */
+
+    .navbar {
+    padding: 12px 20px; /* Menos padding horizontal en móviles */
+    display: flex;
+    padding: 12px 40px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: 1px solid #E5E8EB;
+    position: relative; /* ¡AÑADE ESTO! Es crucial para el posicionamiento absoluto de los links */
+    }
+
+    .navbar__seccion--izquierda {
+        gap: 15px; /* Ajustar el gap si es necesario */
+    }
+
+    .navbar__links {
+        /* En pantallas pequeñas, ocultamos los enlaces por defecto */
+        display: none;
+        flex-direction: column; /* Los enlaces se apilan verticalmente */
+        position: absolute; /* Se posicionan de forma absoluta */
+        top: 100%; /* Debajo de la navbar */
+        left: 0;
+        width: 100%;
+        background-color: #F8F9FA; /* Fondo del menú desplegable */
+        border-bottom: 1px solid #E5E8EB;
+        padding: 20px;
+        z-index: 99; /* Asegura que esté por encima del contenido */
+    }
+
+    /* Cuando la clase 'active' es añadida por JS, muestra el menú */
+    .navbar__links.active {
+        display: flex;
+    }
+
+    .navbar__links li {
+        width: 100%; /* Cada ítem ocupa todo el ancho */
+        padding: 10px 0; /* Espaciado vertical para cada enlace */
+        text-align: center; /* Centrar el texto del enlace */
+        border-bottom: 1px solid #F0F2F4; /* Separador entre enlaces (color ligeramente más claro) */
+    }
+
+    .navbar__links li:last-child {
+        border-bottom: none; /* Sin borde en el último elemento */
+    }
+
+    /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+    .navbar__toggle {
+        display: block; /* Hacemos visible el botón de hamburguesa */
+        order: 1; /* Colócalo antes de la sección derecha para que esté a la izquierda de los íconos */
+        margin-left: auto; /* Empuja el toggle a la derecha, si es necesario, o déjalo sin esto */
+    }
+
+    .navbar__seccion--derecha {
+        gap: 20px; /* Menos espacio entre los botones de la derecha */
+        flex: none; /* No crecer para ocupar espacio, solo el contenido */
+        order: 2; /* Colócalo después del toggle */
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) { /* Por debajo de 480px */
+    .navbar__seccion--izquierda {
+        flex-wrap: wrap; /* Permite que el logo y el nombre se envuelvan si no caben */
+        justify-content: center; /* Centra el logo */
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .navbar__logo {
+        width: 100%;
+        justify-content: center; /* Centra el logo y el texto de la marca */
+    }
+
+    .navbar__brand {
+        font-size: 16px; /* Reducir el tamaño de la marca si es necesario */
+    }
+
+    .navbar__seccion--derecha {
+        width: 100%; /* Ocupa todo el ancho */
+        justify-content: space-around; /* Distribuye los iconos */
+        margin-top: 10px; /* Espacio superior si se mueve a una nueva línea */
+    }
 }
 
 
-
-.navbar__links a,
-.navbar__links a:visited,
-.navbar__links a:hover,
-.navbar__links a:active {
-  color: black;
-  text-decoration: none;
-}
 
 .main {
 
