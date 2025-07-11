@@ -57,17 +57,58 @@ html, body {
   line-height: 21px;
   list-style: none;
 }
-.navbar__seccion--derecha {
+/* .navbar__seccion--derecha {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   gap: 32px;
   flex: 1 0 0;
+} */
+
+/* Styles for the right section of the navbar */
+.navbar__seccion--derecha {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; /* This aligns the buttons to the start of their flex container */
+    gap: 32px; /* Space between buttons */
+    flex: 1 0 0;
 }
 
-.navbar__links a {
-  text-decoration: none;
+/* Base styles for all navbar buttons */
+.navbar__button {
+    background: none;   /* Remove the default browser background */
+    border: none;       /* Remove the default browser border */
+    padding: 5px;         /* Remove the default browser padding */
+    cursor: pointer;    /* Change cursor to a pointer to indicate it's clickable */
+    display: flex;      /* Use flexbox to center the image inside the button */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center;     /* Center the image vertically */
+
+    /* Styles for the image inside the button */
+    img { /* Note: If you're using SCSS, this 'img' could be nested inside .navbar__button */
+        display: block;   /* Helps remove extra space below the image */
+        max-width: 100%;  /* Image won't overflow the button */
+        height: auto;     /* Maintains the image's aspect ratio */
+    }
 }
+
+/* Interactive States (very important) */
+.navbar__button:hover {
+    opacity: 0.7; /* Makes the button slightly more transparent on hover */
+    /* Or you could use: background-color: rgba(0, 0, 0, 0.05); for a subtle background on hover */
+}
+
+.navbar__button:active {
+    opacity: 0.5; /* Makes the button even more transparent when clicked */
+}
+
+.navbar__button:focus {
+    /* Indicates the button is selected (keyboard navigation) */
+    outline: 2px solid blue; /* A blue outline for focus, you can choose your brand color */
+    outline-offset: 2px;     /* A small space between the button and the focus outline */
+}
+
+
 
 .navbar__links a,
 .navbar__links a:visited,
@@ -259,3 +300,4 @@ flex-wrap: wrap;
   font-weight: 400 !important;
   line-height: 24px;
 }
+
